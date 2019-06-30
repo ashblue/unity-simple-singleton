@@ -1,0 +1,7 @@
+{
+  "name": "com.fluid.simple-singleton",
+  "version": "0.0.0",
+  "displayName": "Simple Singleton",
+  "description": "An automaticaly generating singleton class that uses generics and inheritnace to automate its creation.",
+  "unity": "2019.1"
+}
