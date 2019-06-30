@@ -1,6 +1,20 @@
 # Simple Singleton
 
-An automaticaly generating singleton class that uses generics and inheritnace to automate its creation.
+An automatically generating singleton class that uses generics and inheritance for creation.
+
+## Usage
+
+Simply inherit the singleton class. Note that `Singleton<T>` is a MonoBehavior.
+
+```c#
+using CleverCrow.Fluid.Utilities;
+
+public class MySingleton : Singleton<MySingleton> {
+  public MyMethod () {}
+}
+```
+
+You can now call it anywhere with `MySingleton.Instance.MyMethod();` at runtime. It will always return the same instance until `OnDestroy` is called.
 
 ## Installation
 
